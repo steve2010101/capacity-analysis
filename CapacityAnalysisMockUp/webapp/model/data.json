@@ -1,0 +1,233 @@
+ {
+ 	"Objects": [{
+
+ 		"CW": 30,
+ 		"Overview": {
+ 			"Staffed": 50,
+ 			"Unstaffed": 50,
+ 			"Open": 20
+ 		},
+ 		"Region": {
+ 			"NA": 20,
+ 			"LA": 25,
+ 			"EMEA": 55
+ 		},
+ 		"Task": {
+ 			"TA": 10,
+ 			"RES": 50,
+ 			"SO": 80
+ 		},
+ 		"Type": {
+ 			"Novice": 1,
+ 			"On-Site": 8,
+ 			"Remote": 15,
+ 			"TL": 17
+ 		},
+ 		"Productivity": {
+ 			"Total": 100,
+ 			"Fract": 50
+ 		}
+ 	}, {
+
+ 		"CW": 31,
+ 		"Overview": {
+ 			"Staffed": 50,
+ 			"Unstaffed": 70,
+ 			"Open": 25
+ 		},
+ 		"Region": {
+ 			"NA": 20,
+ 			"LA": 25,
+ 			"EMEA": 55
+ 		},
+ 		"Task": {
+ 			"TA": 10,
+ 			"RES": 50,
+ 			"SO": 80
+ 		},
+ 		"Type": {
+ 			"Novice": 1,
+ 			"On-Site": 8,
+ 			"Remote": 15,
+ 			"TL": 17
+ 		},
+ 		"Productivity": {
+ 			"Total": 120,
+ 			"Fract": 50
+ 		}
+ 	}, {
+
+ 		"CW": 33,
+ 		"Overview": {
+ 			"Staffed": 5,
+ 			"Unstaffed": 55,
+ 			"Open": 40
+ 		},
+ 		"Region": {
+ 			"NA": 20.0,
+ 			"LA": 25,
+ 			"EMEA": 55
+ 		},
+ 		"Task": {
+ 			"TA": 10,
+ 			"RES": 50,
+ 			"SO": 80
+ 		},
+ 		"Type": {
+ 			"Novice": 0,
+ 			"On-Site": 0,
+ 			"Remote": 15,
+ 			"TL": 17
+ 		},
+ 		"Productivity": {
+ 			"Total": 60,
+ 			"Fract": 5
+ 		}
+ 	},
+ 	{
+
+ 		"CW": 32,
+ 		"Overview": {
+ 			"Staffed": 20,
+ 			"Unstaffed": 50,
+ 			"Open": 10
+ 		},
+ 		"Region": {
+ 			"NA": 20,
+ 			"LA": 25,
+ 			"EMEA": 55
+ 		},
+ 		"Task": {
+ 			"TA": 10,
+ 			"RES": 50,
+ 			"SO": 80
+ 		},
+ 		"Type": {
+ 			"Novice": 1,
+ 			"On-Site": 8,
+ 			"Remote": 15,
+ 			"TL": 17
+ 		},
+ 		"Productivity": {
+ 			"Total": 60,
+ 			"Fract": 5
+ 		}
+ 	}
+ 	, {
+
+ 		"CW": 33,
+ 		"Overview": {
+ 			"Staffed": 20,
+ 			"Unstaffed": 50,
+ 			"Open": 10
+ 		},
+ 		"Region": {
+ 			"NA": 20,
+ 			"LA": 25,
+ 			"EMEA": 55
+ 		},
+ 		"Task": {
+ 			"TA": 10,
+ 			"RES": 50,
+ 			"SO": 80
+ 		},
+ 		"Type": {
+ 			"Novice": 1,
+ 			"On-Site": 8,
+ 			"Remote": 15,
+ 			"TL": 17
+ 		},
+ 		"Productivity": {
+ 			"Total": 60,
+ 			"Fract": 5
+ 		}
+ 	},
+ 	{
+
+ 		"CW": 32,
+ 		"Overview": {
+ 			"Staffed": 20,
+ 			"Unstaffed": 50,
+ 			"Open": 10
+ 		},
+ 		"Region": {
+ 			"NA": 20,
+ 			"LA": 25,
+ 			"EMEA": 55
+ 		},
+ 		"Task": {
+ 			"TA": 10,
+ 			"RES": 50,
+ 			"SO": 80
+ 		},
+ 		"Type": {
+ 			"Novice": 1,
+ 			"On-Site": 8,
+ 			"Remote": 15,
+ 			"TL": 17
+ 		},
+ 		"Productivity": {
+ 			"Total": 60,
+ 			"Fract": 5
+ 		}
+ 	}, {
+
+ 		"CW": 33,
+ 		"Overview": {
+ 			"Staffed": 20,
+ 			"Unstaffed": 50,
+ 			"Open": 10
+ 		},
+ 		"Region": {
+ 			"NA": 20,
+ 			"LA": 25,
+ 			"EMEA": 55
+ 		},
+ 		"Task": {
+ 			"TA": 10,
+ 			"RES": 50,
+ 			"SO": 80
+ 		},
+ 		"Type": {
+ 			"Novice": 1,
+ 			"On-Site": 8,
+ 			"Remote": 15,
+ 			"TL": 17
+ 		},
+ 		"Productivity": {
+ 			"Total": 60,
+ 			"Fract": 5
+ 		}
+ 	},
+ 	{
+
+ 		"CW": 32,
+ 		"Overview": {
+ 			"Staffed": 20,
+ 			"Unstaffed": 50,
+ 			"Open": 10
+ 		},
+ 		"Region": {
+ 			"NA": 20,
+ 			"LA": 25,
+ 			"EMEA": 55
+ 		},
+ 		"Task": {
+ 			"TA": 10,
+ 			"RES": 50,
+ 			"SO": 80
+ 		},
+ 		"Type": {
+ 			"Novice": 1,
+ 			"On-Site": 8,
+ 			"Remote": 15,
+ 			"TL": 17
+ 		},
+ 		"Productivity": {
+ 			"Total": 60,
+ 			"Fract": 5
+ 		}
+ 	}
+ 	]
+
+ }

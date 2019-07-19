@@ -1,0 +1,102 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:micro="sap.suite.ui.microchart" xmlns:core="sap.ui.core"
+	xmlns:customData="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+	xmlns:fb="sap.ui.comp.filterbar" xmlns:semantic="sap.m.semantic" xmlns:l="sap.ui.layout"
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:ct="sap.com.CapacityAnalysisMockUp.control" controllerName="sap.com.CapacityAnalysisMockUp.controller.View1">
+	<App>
+		<pages>
+			<semantic:SemanticPage>
+				<fb:FilterBar reset="onReset" search="onSearch" showRestoreButton="true" showClearButton="true">
+					<fb:filterItems>
+						<fb:FilterItem name="A" label="From">
+							<fb:control>
+								<Input/>
+							</fb:control>
+						</fb:FilterItem>
+						<fb:FilterItem name="B" label="To" labelTooltip="Tooltip Example">
+							<fb:control>
+								<Input/>
+							</fb:control>
+						</fb:FilterItem>
+					</fb:filterItems>
+				</fb:FilterBar>
+				<Table fixedLayout="false" mode="MultiSelect" sticky="ColumnHeaders,HeaderToolbar" items="{path: 'DataModel>/Objects'}" growing="true"
+					growingThreshold="3">
+					<headerToolbar>
+						<OverflowToolbar id="otbSubheader">
+							<ToolbarSpacer/>
+							<Button text="Reset" icon="sap-icon://action-settings" type="Transparent" press="onReset"/>
+							<OverflowToolbarButton type="Transparent" text="Settings" icon="sap-icon://action-settings" press="onSettingsPress"/>
+							<OverflowToolbarButton type="Transparent" text="Group" icon="sap-icon://group-2" press="onGroup"/>
+						</OverflowToolbar>
+					</headerToolbar>
+					<columns>
+						<Column minScreenWidth="Phone" width="4em">
+							<Text text="CW"/>
+						</Column>
+						<Column minScreenWidth="Phone">
+							<Text text="Productivity"/>
+						</Column>
+						<Column demandPopin="true" minScreenWidth="XXLarge" width="28em">
+							<Text text="Overview"/>
+						</Column>
+						<Column demandPopin="true" minScreenWidth="Tablet" width="28em">
+							<Text text="Region"/>
+						</Column>
+						<Column demandPopin="true" minScreenWidth="XXLarge" width="28em">
+							<Text text="Task"/>
+						</Column>
+						<Column demandPopin="true" minScreenWidth="Tablet" width="32em">
+							<Text text="Type"/>
+						</Column>
+					</columns>
+					<items>
+						<ColumnListItem vAlign="Middle">
+							<cells>
+								<ObjectIdentifier title="{DataModel>CW}" text=""/>
+								<micro:HarveyBallMicroChart isResponsive="true" total="{DataModel>Productivity/Total}" size="S" totalScale="Total" showTotal="true"
+									showFractions="true" app:name="harvey ball" press="press">
+									<micro:items>
+										<micro:HarveyBallMicroChartItem fraction="{DataModel>Productivity/Fract}" color="Good" fractionScale="Days"/>
+									</micro:items>
+								</micro:HarveyBallMicroChart>
+								<micro:ComparisonMicroChart app:name="comparison" press="press" isResponsive="true">
+									<micro:data>
+										<micro:ComparisonMicroChartData title="Open" value="{DataModel>Overview/Open}" color="Good"/>
+										<micro:ComparisonMicroChartData title="Unstaffed" value="{DataModel>Overview/Unstaffed}" color="Critical"/>
+										<micro:ComparisonMicroChartData title="Staffed" value="{DataModel>Overview/Staffed}" color="Good"/>
+									</micro:data>
+								</micro:ComparisonMicroChart>
+							
+								<FlexBox width="20rem">
+									<items>
+										<micro:InteractiveDonutChart selectionChanged="onSelectionChanged" selectionEnabled="false">
+											<micro:InteractiveDonutChartSegment label="EMEA" value="{DataModel>Region/NA}" displayedValue="43.0%"/>
+											<micro:InteractiveDonutChartSegment label="NA" value="21.5" displayedValue="21.5%"/>
+											<micro:InteractiveDonutChartSegment label="LA" value="38.5" displayedValue="38.5%"/>
+										</micro:InteractiveDonutChart>
+									</items>
+								</FlexBox>
+								<micro:ComparisonMicroChart app:name="comparison" press="press" isResponsive="true">
+									<micro:data>
+										<micro:ComparisonMicroChartData title="SO" value="{DataModel>Task/SO}" color="Neutral"/>
+										<micro:ComparisonMicroChartData title="RES" value="{DataModel>Task/RES}" color="Neutral"/>
+										<micro:ComparisonMicroChartData title="TA" value="{DataModel>Task/TA}" color="Neutral"/>
+									</micro:data>
+								</micro:ComparisonMicroChart>
+								<VBox>
+									<ct:CompStackedBar leftLabel="Remote" leftValue="{DataModel>Type/Remote}" rightValue="{DataModel>Type/TL}" rightLabel="TL"/>
+									<ct:CompStackedBar leftLabel="Novice" leftValue="{DataModel>Type/Novice}" rightValue="{DataModel>Type/On-Site}" rightLabel="On-Site"/>
+								</VBox>
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
+				<semantic:customFooterContent>
+					<Button text="View More Details" press="onPress"/>
+					<Button text="Go To Worklist" press="onPress"/>
+				</semantic:customFooterContent>
+			</semantic:SemanticPage>
+		</pages>
+	</App>
+</mvc:View>

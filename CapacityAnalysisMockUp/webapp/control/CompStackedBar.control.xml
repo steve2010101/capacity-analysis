@@ -1,0 +1,25 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:micro="sap.suite.ui.microchart">
+	<l:Grid hSpacing="0" vSpacing="0">
+		<Label text="{$this>leftLabel}" class="sapUiTinyMarginTop" ><!--class="sapUiSmallMarginTop"-->
+			<layoutData>
+				<l:GridData span="L2 M2 S2"/>
+			</layoutData>
+		</Label>
+		
+		<micro:StackedBarMicroChart press="press" maxValue="{$this>maxValue}" height="2.5em" width="100%">
+			<micro:bars>
+				<micro:StackedBarMicroChartBar displayValue="{$this>leftValue}" value="{$this>leftValue}"/>
+				<micro:StackedBarMicroChartBar displayValue="{$this>rightValue}" value="{$this>rightValue}"/>
+			</micro:bars>
+			<micro:layoutData>
+				<l:GridData span="L8 M8 S8"/>
+			</micro:layoutData>
+		</micro:StackedBarMicroChart>
+		
+		<Label text="{$this>rightLabel}" class="sapUiTinyMargin" >  <!--class="sapUiSmallMargin" -->
+			<layoutData>
+				<l:GridData span="L2 M2 S2"/>
+			</layoutData>
+		</Label>
+	</l:Grid>
+</core:FragmentDefinition>
